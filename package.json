@@ -2,10 +2,34 @@
   "name": "communication-services-web-chat",
   "version": "1.0.0",
   "scripts": {
-    "start": "sirv ./src public --cors --single --no-clear --port 8000",
-    "playwright_test" : "playwright test"
+    "start": "npx parcel public/index.html",
+    "playwright_test": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/communication-chat": "^1.2.1",
+    "@azure/communication-common": "^2.0.0",
+    "@azure/communication-identity": "^1.1.0",
+    "@azure/communication-signaling": "^1.0.0-beta.14"
   },
   "devDependencies": {
-    "@playwright/test": "^1.22.2"
-  }
+    "@playwright/test": "^1.22.2",
+    "buffer": "^6.0.3",
+    "parcel": "^2.6.2"
+  },
+  "description": "[Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) allows you to easily build JavaScript apps in minutes. Use this repo with the [quickstart](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript) to build and customize a new static site.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaracil/my-first-static-web-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yaracil/my-first-static-web-app/issues"
+  },
+  "homepage": "https://github.com/yaracil/my-first-static-web-app#readme"
 }
